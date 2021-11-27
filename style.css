@@ -1,7 +1,55 @@
+body {
+	background: #F4EADE;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	min-height: 100vh;
+	
+	align-items: center;
+}
+#pag-tittle{
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px;
+  text-shadow: 3px  0px 0px #2F496E,
+               0px  3px 0px #2F496E,
+              -3px  0px 0px #2F496E,
+               0px -3px 0px #2F496E;
+
+}
+#aviones{
+  margin-top: 500px;
+}
+#tegustaria{
+  margin: 10px ;
+  width: max-content;
+  padding: 10px 10px;
+  border-color: none;
+  cursor: pointer;
+  border-color: none;
+  border: 0px;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+}
+#tegustaria:hover{
+  background-color: #2988BC;
+  transition: .6s;
+}
+.final{
+  background-color: none;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+.imagen-list{
+  width: 300px;
+  height: 200px;
+}
 .contenedor {
 	max-width: 1200px;
 	width: 90%;
 	margin: auto;
+  margin-top: 100px;
 }
 .contenido-principal {
 	margin-bottom: 50px;
@@ -14,6 +62,7 @@
 	margin-right: 20px;
 	width: 50%;
 	max-width: 550px;
+  
 }
 
 .contenido-principal__contenedor {
@@ -28,42 +77,36 @@
 .contenido-principal__resumen {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 30px;
-	color: #CFCFCF;
+	color: black;
 }
 
 #titulo{
-    background-color: #030A49;
+    background-color: #2988BC;
     width: 100%;
-    height: 80px;
+    height: 100px;
     position: fixed;
     top: 0%;
     left: 0%;
 }
 .logo{
-       width: 20%;
-       text-align: right;
-
-
-
+  width: 95px; height: 95px;
 } 
-#logop{
-  width: 80px;
-  height: 50px;  
-}
+
 .nav-menu{
   display: flex;
   margin-right: 40px;
   list-style: none;
 }
 .nav-item{
-  font-size: 18px;
+  font-size: 22px;
   margin: 0px 10px;
+  margin-top: 12px;
   line-height: 50px;
   text-transform: uppercase;
   width: max-content;
 }
 .nav-item-link{
-  background-color: #030A49;
+  background-color: #2988BC;
   color: white;
   font-family: Verdana;
   text-decoration: none;
@@ -71,7 +114,7 @@
   border-radius: 3px;
 }
 .nav-item-link:hover{
-  background-color: #0F74D1;
+  background-color: #2F496E;
   transition: 0.5s;
 }
 #navega{
@@ -90,35 +133,50 @@
   border: none;
   font-size: 30px;
   line-height: 60px;
-  padding: 0px 20px;
+  padding: 0px 40px;
   display: none;
   cursor: pointer;
 }
 @media (max-width: 768px){
+  #tegustaria{
+    margin: 10px ;
+    width: max-content;
+    padding: 10px 10px;
+    border-color: none;
+    cursor: pointer;
+    border-color: none;
+    border: 0px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+  }
+  #tegustaria:hover{
+    background-color:  #2988BC;
+    
+  }
   body{
 padding-top: 60px;
   }
   #titulo{
-    height: 70px;
+    height: 80px;
 }
 .logo{
-  line-height: 40px;
-  padding: 20px 20px;
+  height: 80px; width: 80px;
+  padding: 10px 10px;
+  
 }
-#logop{
-  width: 60px;
-  height: 30px;  
-}
+
 .nav-menu{
   flex-direction: column;
   margin-right: 0px;
-  background-color: #45505B;
+  background-color: #2988BC;
   position: fixed;
   left: 0%;
+  margin-top: 20px;
   top: 50px;
   width: 100%;
   align-items: center;
-  padding: 20px 0px;
+  padding: 10px 0px;
   height: calc(100%-50px);
   overflow-y: auto;
   left: 100%;
@@ -128,10 +186,10 @@ padding-top: 60px;
   line-height: 40px;
 }
 .nav-item-link{
-  background-color: #45505B;
+  background-color: #2988BC;
 }
 .nav-item-link:hover{
-color: #0F74D1;
+color: #2F496E;
 }
 .nav-toggle{
   display: block;
@@ -143,20 +201,6 @@ left: 0%;
 * {
 	box-sizing: border-box;
 }
-}
-body {
-	background: #1D1D1F;
-	color: #fff;
-	font-family: 'Montserrat', sans-serif;
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-}
-
-.contenedor {
-	max-width: 1200px;
-	width: 90%;
-	margin: auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -170,12 +214,11 @@ body {
 
 	.contenido-principal > * {
 		width: 100%;
-	}
-}
-
+	}}
+/*Carousel*/
 
 .carousel__contenedor {
-	position: relative;
+	position:relative;
 }
 
 .carousel__anterior,
@@ -190,8 +233,8 @@ body {
 	line-height: 30px;
 	text-align: center;
 	background: none;
-	color: #fff;
-	opacity: 20%;
+	color: black;
+	opacity: 50%;
 }
 
 .carousel__anterior:hover,
@@ -219,7 +262,7 @@ body {
 	display: block;
 	width: 30px;
 	height: 4px;
-	background: #fff;
+	background: black;
 	opacity: .2;
 	border-radius: 0;
 }
