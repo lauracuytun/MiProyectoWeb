@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido al Mundo Aeronautico</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <script src="https://kit.fontawesome.com/57a4dbbfaa.js" crossorigin="anonymous"></script>
+   
+    
+ </head>
+<body>
+    <header id="titulo">
+        <nav id="navega">
+          <img src="ima/icon.png" alt="" class="logo">
+          <p id="pag-tittle">Amor por la Aviación</p>
+          <button class="nav-toggle" aria-label="Abrir Menú">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu nav-menu_visible">
+            <li class="nav-item"> <a href="proyecto.html" class="nav-item-link">Inicio</a></li>
+            <li class="nav-item"> <a href="acerca.html" class="nav-item-link">Acerca</a></li>
+            <li class="nav-item"> <a href="index.html" class="nav-item-link">Portafolio</a></li>
+            <li class="nav-item"> <a href="historia.html" class="nav-item-link">Historia</a></li>
+            
+          </ul> 
+        </nav>    
+    </header>
+    <div class="contenedor">
+      <main class="contenido-principal">
+        <img src="ima/Avioninicio-640x360.jpg" alt="Dome of the German Bundestag" class="contenido-principal__imagen">
+        <div class="contenido-principal__contenedor">
+          <h1 class="contenido-principal__titulo">Bienvenidos al mundo aeronáutico</h1>
+          <p class="contenido-principal__resumen">
+            Listo para aprender todo sobres los aviones
+          </p>
+          <p class="contenido-principal__resumen">
+            Un avión es un vehículo que puede desplazarse por el aire gracias a que cuenta con un motor y con alas. Los creadores de estas grandes aves mecánicas hicieron que los aviones facilitaran la conectividad y el transporte de pasajeros y carga. Hoy en dia las aeronaves son uno de los mayores inventos del mundo, especialmente porque se ha puesto a pruebla del desarrollo tecnológico y la creatividad del hombre para poder volar un avión.
+          </p>
+        </div>
+      </main>
+      <div class="final">
+        <a href="info.html"><button id="tegustaria" >¿Te gustaria saber mas de estos aviones?</button></a>
+       </div>  
+  
+      <div class="carousel">
+        <div class="carousel__contenedor">
+          <button aria-label="Anterior" class="carousel__anterior">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+  
+          <div class="carousel__lista">
+            <div class="carousel__elemento">
+              <img src="ima/F-35.jpg" alt="Rock and Roll Hall of Fame" class="imagen-list">
+              <p>Rock and Roll Hall of Fame</p>
+            </div>
+            <div class="carousel__elemento">
+            <img src="ima/Lockheed-Martin-F-16-Block-70.jpg" alt="Constitution Square - Tower I" class="imagen-list">
+              <p>Constitution Square - Tower I</p>
+            </div>
+            <div class="carousel__elemento">
+              <a onclick=""><img src="ima/Caza-F-15E.jpg" alt="Empire State Building" class="imagen-list"></a>
+              <p>Empire State Building</p>
+            </div>
+            <div class="carousel__elemento">
+              <img src="ima/DASSAULT-RAFALE.jpeg" alt="Harmony Tower" class="imagen-list">
+              <p>Harmony Tower</p>
+            </div>
+    
+            <div class="carousel__elemento">
+              <img src="ima/Su-35.jpg" alt="Empire State Building" class="imagen-list">
+              <p>Empire State Building</p>
+            </div>
+            <div class="carousel__elemento">
+              <img src="ima/30mki.jpg" alt="Harmony Tower" class="imagen-list">
+              <p>Harmony Tower</p>
+            </div>
+          </div>
+  
+          <button aria-label="Siguiente" class="carousel__siguiente">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+  
+        <div role="tablist" class="carousel__indicadores"></div>
+      </div>
+    </div>
+ 
+ 
+     
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+</body>
+</html>

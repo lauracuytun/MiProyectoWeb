@@ -1,0 +1,278 @@
+body {
+	background: #F4EADE;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	min-height: 100vh;
+	
+	align-items: center;
+}
+#pag-tittle{
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px;
+  text-shadow: 3px  0px 0px #2F496E,
+               0px  3px 0px #2F496E,
+              -3px  0px 0px #2F496E,
+               0px -3px 0px #2F496E;
+
+}
+#aviones{
+  margin-top: 500px;
+}
+#tegustaria{
+  margin: 10px ;
+  width: max-content;
+  padding: 10px 10px;
+  border-color: none;
+  cursor: pointer;
+  border-color: none;
+  border: 0px;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+}
+#tegustaria:hover{
+  background-color: #2988BC;
+  transition: .6s;
+}
+.final{
+  background-color: none;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+.imagen-list{
+  width: 300px;
+  height: 200px;
+}
+.contenedor {
+	max-width: 1200px;
+	width: 90%;
+	margin: auto;
+  margin-top: 100px;
+}
+.contenido-principal {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.contenido-principal__imagen {
+	vertical-align: top;
+	margin-right: 20px;
+	width: 50%;
+	max-width: 550px;
+  
+}
+
+.contenido-principal__contenedor {
+	width: 50%;
+}
+
+.contenido-principal__titulo {
+	font-weight: normal;
+	font-size: 28px;
+}
+
+.contenido-principal__resumen {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+	color: black;
+}
+
+#titulo{
+    background-color: #2988BC;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+.logo{
+  width: 95px; height: 95px;
+} 
+
+.nav-menu{
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+.nav-item{
+  font-size: 22px;
+  margin: 0px 10px;
+  margin-top: 12px;
+  line-height: 50px;
+  text-transform: uppercase;
+  width: max-content;
+}
+.nav-item-link{
+  background-color: #2988BC;
+  color: white;
+  font-family: Verdana;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+.nav-item-link:hover{
+  background-color: #2F496E;
+  transition: 0.5s;
+}
+#navega{
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+}
+#navega p{
+      text-align: center;
+      color:white;
+}
+.nav-toggle{
+  background: none;
+  color: white;
+  border: none;
+  font-size: 30px;
+  line-height: 60px;
+  padding: 0px 40px;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 768px){
+  #tegustaria{
+    margin: 10px ;
+    width: max-content;
+    padding: 10px 10px;
+    border-color: none;
+    cursor: pointer;
+    border-color: none;
+    border: 0px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+  }
+  #tegustaria:hover{
+    background-color:  #2988BC;
+    
+  }
+  body{
+padding-top: 60px;
+  }
+  #titulo{
+    height: 80px;
+}
+.logo{
+  height: 80px; width: 80px;
+  padding: 10px 10px;
+  
+}
+
+.nav-menu{
+  flex-direction: column;
+  margin-right: 0px;
+  background-color: #2988BC;
+  position: fixed;
+  left: 0%;
+  margin-top: 20px;
+  top: 50px;
+  width: 100%;
+  align-items: center;
+  padding: 10px 0px;
+  height: calc(100%-50px);
+  overflow-y: auto;
+  left: 100%;
+  transition: left 0.3s;
+}
+.nav-item{
+  line-height: 40px;
+}
+.nav-item-link{
+  background-color: #2988BC;
+}
+.nav-item-link:hover{
+color: #2F496E;
+}
+.nav-toggle{
+  display: block;
+}
+.nav-menu_visible{
+left: 0%;
+}
+
+* {
+	box-sizing: border-box;
+}
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}}
+/*Carousel*/
+
+.carousel__contenedor {
+	position:relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: black;
+	opacity: 50%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: -30px;
+}
+
+.carousel__siguiente {
+	right: -30px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: black;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+

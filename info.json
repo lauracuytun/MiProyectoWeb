@@ -1,0 +1,48 @@
+[
+    {
+    "nombre": "F-35 Lightning II",
+     "salida": "2006",
+     "dato_curioso": "Es el único avión de combate de quinta generación de múltiples funciones en el mundo.",
+     "foto": "ima/F-35.jpg"
+
+},
+
+    {
+    "nombre": "Boing_777",
+    "salida": "Creado en 1990",
+    "dato_curioso": "Durante las dos décadas desde su primer vuelo, el 777 se ha convertido en el avión favorito de las aerolineas para los viajes largos. Una de las principales características del diseño del Boing 777 es que no se realizaron maquetas o dibujos, sino que se convirtio en el primer avión comercial en ser diseñado a través de un programa computarizado. ",
+    "foto": "ima/boing_777.jpg"
+    },
+    
+    {
+        "nombre": "Su-35",
+        "salida": "Fue construido en 2007 en la Asociación de Producción de Aviación Komsomolsk-na-Amure.",
+        "dato_curioso": "Es capaz de desplegar misiles aire-aire de largo y corto alcance y municiones aire-tierra no guiadas y de precisión, incluyendo misiles, bombas y cohetes. Los 14 puntos externos de la aeronave le permiten transportar una carga útil máxima de armas de 8 toneladas. ",
+        "foto": "ima/Su-35.jpg"
+        },
+        
+    {
+        "nombre": "Lockheed-Martín-F-16-Block-70",
+        "salida": "Creado y diseñado en 1970",
+        "dato_curioso": "Es un avión de combate de gran éxito con 26 naciones que lo poseen, mas de 4.500 construidos. Es una caza de multiusos de motor único y extremadamente probado en combate.",
+        "foto": "ima/Lockheed-Martin-F-16-Block-70.jpg"
+        },
+        
+    {
+        "nombre": "Dessault Rafale",
+        "salida": "El primer despliegue de combate del caza Rafale fue en 2002.",
+        "dato_curioso": "El avión de combate multifuncional es operado por la fuerza Aérea y la Armada francesas. Esta aeronave cuenta con los últimos sistemas de aviónica y sensores inteligentes. Puede transportar un cañon de 30mm, misiles aire-aire y aire-tierra, misiles nucleares y anti-buque, así como una gama de bombas guiadas por láser y municiones de ataque a tierra.",
+        "foto": "ima/DASSAULT-RAFALE.jpeg"
+        },
+        
+    {
+        "nombre": "Boeing 747",
+        "salida": "El primer vuelo comercial fue en el año 1970.",
+        "dato_curioso": "El Boeing 747, tiene cuatro motores, utiliza una configuración de dos pisos en parte de su longitud. Está entre los aviones comerciales más rápidos, con una velocidad subsónica de crucero de Mach 0.85-0.855 (hasta 920 km/h). Tiene un alcance intercontinental de 13,450 km.",
+        "foto": "ima/boing_747.jpg"
+        }
+    
+
+
+]
+

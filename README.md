@@ -1,2 +1,5 @@
-# MiProyectoWeb
-Repositorio del Curso Fundamentos de Programación Web.
+#inicio del curso programacion 
+primer repositorio 
+Repositorio donde tendre almacenado mis actividades 
+
+hola. 

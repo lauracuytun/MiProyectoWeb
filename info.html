@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviones info</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="acerca.css">
+    <script defer src="index.js"></script>
+    <script src="https://kit.fontawesome.com/57a4dbbfaa.js" crossorigin="anonymous"></script>
+    <script src="info.json"></script>
+    
+ </head>
+<body >
+    <header id="titulo">
+        <nav id="navega">
+          <img src="ima/icon.png" alt="" class="logo">
+          <p id="pag-tittle">Informacion</p>
+          <button class="nav-toggle" aria-label="Abrir Menú">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu nav-menu_visible">
+            <li class="nav-item"> <a href="proyecto.html" class="nav-item-link">Inicio</a></li>
+            <li class="nav-item"> <a href="acerca.html" class="nav-item-link">Acerca</a></li>
+            <li class="nav-item"> <a href="index.html" class="nav-item-link">Portafolio</a></li>
+            <li class="nav-item"> <a href="historia.html" class="nav-item-link">Historia</a></li>
+            
+          </ul> 
+        </nav>    
+    </header>
+   
+  
+
+
+
+ <script>
+    let respuesta = new XMLHttpRequest();
+           respuesta.open('GET', 'info.json');
+             console.log(respuesta)
+            respuesta.send();           
+         respuesta.onreadystatechange = function() {
+               if (this.readyState === XMLHttpRequest.DONE && this.status === 200){
+                   let respuestaJson = JSON.parse(this.responseText);
+                   let res = document.querySelector('#res');  
+                   res.innerHTML = '';
+            
+                   for(let item of respuestaJson){
+                            
+           res.innerHTML +=
+           `
+           <tr>
+           <td class="imagen-avion-contenedor">${item.nombre}</td>
+           <td class="imagen-avion-contenedor">${item.salida}</td>
+           <td class="imagen-avion-contenedor">${item.dato_curioso}</td>
+           <td class="imagen-avion-contenedor"><img class="tablaima" src="${item.foto}"></td>
+           `
+        }
+               }
+           }; 
+       
+   </script>
+ <div>
+<table style="margin-left: 30px;">
+    <thead>
+        <th class="celda">Nombre</th>
+        <th class="celda">Origen</th>
+        <th class="celda">Dato</th>
+        <th class="celda">Imagenes</th> 
+    </thead>
+    <tbody id="res">
+        
+   
+    </tbody>
+
+</table>
+</div>
+<div>
+   
+</div>
+</body>
+</html>

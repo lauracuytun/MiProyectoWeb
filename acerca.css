@@ -1,0 +1,164 @@
+#pag-tittle{
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px;
+  text-shadow: 3px  0px 0px #2F496E,
+               0px  3px 0px #2F496E,
+              -3px  0px 0px #2F496E,
+               0px -3px 0px #2F496E;
+}
+.info{
+  background-color: red;
+  padding-bottom: 500px;
+}
+.imagen{
+    width: 500px;
+    height: 250px;
+}
+.celda{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+	font-size: 28px;
+}
+body{
+  background: #F4EADE;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	min-height: 100vh;
+	margin-top: 120px;
+	align-items: center;
+}
+.tittle{
+    font-family: 'Montserrat', sans-serif;
+}
+.imagen-avion-contenedor{
+  width: 300px; height: 200px;
+}
+.tablaima{
+  width: 300px; height: 200px;
+}
+
+.parrafo{
+    font-family:  'Montserrat', sans-serif;
+}
+#titulo{
+  background-color: #2988BC;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+.logo{
+  width: 95px; height: 95px;
+
+
+
+} 
+#logop{
+  width: 80px;
+  height: 50px;  
+}
+.nav-menu{
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+.nav-item{
+  font-size: 22px;
+  margin: 0px 10px;
+  margin-top: 12px;
+  line-height: 50px;
+  text-transform: uppercase;
+  width: max-content;
+}
+.nav-item-link{
+  background-color: #2988BC;
+  color: white;
+  font-family: Verdana;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-item-link:hover{
+  background-color: #0F74D1;
+  transition: 0.5s;
+}
+#navega{
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+}
+#navega p{
+      text-align: center;
+      color:white;
+}
+.nav-toggle{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 30px;
+    line-height: 60px;
+    padding: 0px 20px;
+    display: none;
+    cursor: pointer;
+  }
+  @media (max-width: 768px){
+    body{
+  padding-top: 60px;
+    }
+    #titulo{
+      height: 70px;
+  }
+  .logo{
+    line-height: 40px;
+    padding: 20px 20px;
+  }
+  #logop{
+    width: 60px;
+    height: 30px;  
+  }
+  .nav-menu{
+    flex-direction: column;
+    margin-right: 0px;
+    background-color: #45505B;
+    position: fixed;
+    left: 0%;
+    top: 50px;
+    width: 100%;
+    align-items: center;
+    padding: 20px 0px;
+    height: calc(100%-50px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+  }
+  .nav-item{
+    line-height: 40px;
+  }
+  .nav-item-link{
+    background-color: #45505B;
+  }
+  .nav-item-link:hover{
+  color: #0F74D1;
+  }
+  .nav-toggle{
+    display: block;
+  }
+  .nav-menu_visible{
+  left: 0%;
+  }
+  
+  * {
+      box-sizing: border-box;
+  }
+  }
+  @media (max-width: 768px){
+      .imagen{
+          width: 250px;
+          height: 125px;
+      }
+  }
